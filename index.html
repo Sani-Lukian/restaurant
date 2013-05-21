@@ -1,0 +1,92 @@
+<html>
+<body bgcolor="yellow">
+
+<p>
+  <FONT SIZE=20 ALIGN = center color="#800080"><I>Анкета відвідувачів ресторану "Государь" </I></font></p>
+<form action="handler.php" method =get>
+Ваше ім'я <input type="text" name="imya" >  <p>
+По батькові   <input type="text" name="fathers_name" >  <p>
+ Прізвище <input type="text" name="surname" >  <p>
+ 
+
+Звідки ви довідалися про ресторан?<br />
+
+<input type="radio" name="where" value="web" checked="checked" />Пошукова програма в  Інтернеті чи Інтернет-посилання. <br />
+<input type="radio" name="where" value="advert" />Реклама по радіо чи телебаченню.<br />
+<input type="radio" name="where" value="press" />З газети. <br />
+<input type="radio" name="where" value="other" />Інше.<br /><br />
+
+Як часто Ви відвідуєте наш ресторан?
+<select name="frequency">
+<option selected="selected" value="first">Bnepшe</option> 
+<option value="monthly">Щомісяця</орtion>
+<option value="weekly">Щотижня</орtion>
+<option value="daily">Щодня</option>
+</select> <br /><br />
+
+Оцініть, будь ласка, сервіс ресторану
+<select name="service">
+<option selected="selected" value="five">5</option> 
+<option value="four">4</орtion>
+<option value="three">3</орtion>
+<option value="two">2</option>
+<option value="one">1</option>
+</select> <br /><br />
+
+Оцініть, будь ласка, кухню ресторану
+<select name="kitchen">
+<option selected="selected" value="five">5</option> 
+<option value="four">4</орtion>
+<option value="three">3</орtion>
+<option value="two">2</option>
+<option value="one">1</option>
+</select> <br /><br />
+
+Оцініть, будь ласка, загальне враження від ресторану
+<select name="all">
+<option selected="selected" value="five">5</option> 
+<option value="four">4</орtion>
+<option value="three">3</орtion>
+<option value="two">2</option>
+<option value="one">1</option>
+</select> <br /><br />
+
+Ваші побажання щодо покращення роботи ресторану: </р> 
+<select name="better_work" multip1e="multiple">
+<option value="upgrade"> Збільшення асортименту страв </option>
+<option value="repair"> Удосконалення сервісу </option>
+<option value="apps"> Постійна жива музика </option>
+<option value="tricks"> Шоу-балет для банкетів </option>
+<option value="news"> Дегустація нових страв </option>
+<option value="none" selected="se1ected"> Мені подобається все в ресторані </option>
+</select>
+<br><br>
+<fieldset>  
+
+<legend>Чи бажаєте ви отримувати додаткові знижки?</legend>  
+ <input name="question" value="yes" type="radio" />Так <br> 
+<input name="question" value="no" type="radio" /> Ні  
+</fieldset> 
+
+<br>
+Уведіть свою дату народження, щоб адміністрація ресторану могла привітати вас із чудовим святом 
+<input type="text" name="data" >  <p>
+<br>
+Ваш телефон <input type="text" name="telephone" >  <p>
+<br>
+Уведіть пароль(номер дисконтної карти): <input type="password" name="password" size="10" maxlength="10" />
+<br>
+<br>
+
+<button name="submit" type="submit"> <span style="font-family: Courier: font-variant: small-caps; font-size: 14pt">Відправити </span></button>
+<br>
+
+<form action="names.php" method =get>
+<button name="submit" type="submit"> <span style="font-family: Courier: font-variant: small-caps; font-size: 14pt">Переглянути </span></button>
+<br>
+ </form>
+
+</body>
+
+
+</html>                                                                          
