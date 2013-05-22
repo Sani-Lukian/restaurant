@@ -1,4 +1,3 @@
-
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -9,7 +8,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 
-CREATE TABLE IF NOT EXISTS `testbd` (
+CREATE TABLE IF NOT EXISTS `bd` (
   `data1` text NOT NULL,
   `data2` text NOT NULL,
   `data3` text NOT NULL,
@@ -24,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `testbd` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-INSERT INTO `testbd` (`data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`) VALUES
+INSERT INTO `bd` (`data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`) VALUES
 ('', '', '100', '100', '100', '1000', '100', '100', 'Ê ïîäåçäó', '1', ''),
 ('', '', '100', '100', '100', '1000', '100', '100', 'Ê ïîäåçäó', '1', '');
 
