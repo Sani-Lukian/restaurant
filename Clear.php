@@ -1,6 +1,6 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
-define("DBName","testbd");
+define("DBName","bd");
 define("HostName","localhost");
 define("UserName","root");
 define("Password","");
@@ -34,13 +34,13 @@ if(!$r)
 echo mysql_error();
 }
 
- $r=mysql_query("CREATE TABLE IF NOT EXISTS `testbd` (  `familiya` text NOT NULL,  `imya` text NOT NULL,  `ScreenSize` int NOT NULL,  `MemSize` int NOT NULL,  `HDDSize` int NOT NULL,  `SensScreen` int NOT NULL, videoPrice int NOT NULL, `CPUPrice` int NOT NULL,  `dostavka` int NOT NULL,  `kolichestvo` int NOT NULL,  `address` text NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
+ $r=mysql_query("CREATE TABLE IF NOT EXISTS `testbd` (  `name1` text NOT NULL,  `name2` text NOT NULL,  `name3` int NOT NULL,  `service` int NOT NULL,  `frequency` int NOT NULL,  `kitchen` int NOT NULL, better_work int NOT NULL, `question` int NOT NULL,  `data` int NOT NULL,  `telephone` int NOT NULL,  `password` text NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
 if(!$r)
 { echo "Error !<br>";
 echo mysql_error();
 }
 
- $r=mysql_query("INSERT INTO `testbd` (`familiya`, `imya`, `ScreenSize`, `MemSize`, `HDDSize`, `SensScreen`, videoPrice, `CPUPrice`, `dostavka`, `kolichestvo`, `address`) VALUES ('', '', '100', '100', '100', '1000', '100', '100', '? ???????', '1', ''),('', '', '100', '100', '100', '1000', '100', '100', '0', '1', '');");
+ $r=mysql_query("INSERT INTO `testbd` (`name1`  `name2`   `name3` ,  `service`,  `frequency` ,  `kitchen` , better_work , `question` ,  `data`,  `telephone`,  `password`) VALUES ('', '', '100', '100', '100', '1000', '100', '100', '? ???????', '1', ''),('', '', '100', '100', '100', '1000', '100', '100', '0', '1', '');");
 if(!$r)
 { echo "Error !<br>";
 echo mysql_error();
