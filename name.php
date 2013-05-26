@@ -1,4 +1,3 @@
-
 <html>
 <body bgcolor="yellow">
 <head>
@@ -103,6 +102,25 @@ echo "Дата мого народження $data<p>";
 echo "Мій телефон - $telephone <p>";
 echo "мій пароль - $password";
 
+
+if(!mysql_connect(HostName,UserName,Password))
+{ echo "Error connecting to database".DBName."!<br>";
+echo mysql_error();
+exit;
+} 
+
+mysql_select_db(DBName);
+
+$sql="INSERT INTO bd (name1, name2,  name3, service, frequency,  kitchen, better_work, `question, data, telephone, password) VALUES (`$name1`,  `$name2` ,  `$name3` ,  `$service`,  `$frequency` ,  `$kitchen` , $better_work , `$question` ,  `$data`,  `$telephone`,  `$password`');";
+echo $sql;
+if (!mysql_query($sql))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "Запись успешно добавлена в базу данных.";
+
+//mysql_close($con);
+
+
 ?>
-</body>
-</html>
+
